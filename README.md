@@ -31,4 +31,18 @@ and look like.
 		* font color, hover: #ecc44d (Yellow)
   * hover-over effects: border-left 4px
   * menu layout/size: (?)
+
+##Elements in the United Toolbar
+This section is taken from documentation of previous agreements supplied by the product owner
+
+* Menu button: Opens main drop down menu
+* HUD button: Brings up HUD
+* AppsMall button: Brings up AppsMall
+* Webtop button: Brings up Webtop
+* Blank section
+	* At a later date HUD will utilize a plug-in to enable switching between favorite apps using a pin-bar set-up
+* Notifications button: Opens notifications menu
+* Time
+* User button: Opens user menu
+* Help button: Brings up “Help” window
   
