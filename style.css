@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+/* bring back vertical dividers in bootstrap 3.0
+http://stackoverflow.com/questions/19203816/vertical-divider-wont-work-in-bootstrap-3-0 */
+.navbar .divider-vertical {
+  height: 30px;
+  margin: 0 9px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+.no-rounded-corners {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.navbar-right li {
+  margin-left: 20px;
+}
+
+.iconWhite {
+  color: white;
+}
+
+.dashboard-toolbar {
+  margin-top: 0;
+  margin-bottom: 0;
+}
