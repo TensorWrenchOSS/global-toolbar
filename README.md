@@ -11,20 +11,24 @@ and look like.
 
 ##Stuff to agree on
 
- * navbar background color: 
- * page background color: 
- * font color: 
- * font: 
+ * navbar background color: #2B3036 (Dark Gray 2)
+ * navbar menu icon background color: #191f25 (Black)
+ * page background color: #191f25 (Black)
+ * font color: #ffffff (White)
+ * font: Ubuntu
+ * font weight: light (300)
  * font-size: 
- * icons: font-awesome only? bootstrap only? custom?
- * icon color: black and white, color?
- * icon size: 
+ * icon font: font-awesome
+ * icon color, static: #ffffff (White)
+ * icon color, hover: #ecc44d (Yellow)
+ * icon color, active: #558dc3 (Blue 2)
+ * icon size: (min. 16 pt for colors, any smaller, we will have to change “Active” - SD)
  * navbar height:
- * menu contents (will be slightly different for webtop vs HUD): 
- * hover-over effects (yellow bar at bottom?): 
- * dropdown menu: 
-  * background color: 
-  * font color: 
-  * menu layout/size: 
-  * hover-over effects: 
+ * hover-over effects: border-bottom 4px
+ * dropdown menus: 
+  * background color: #3b4246 (Dark Gray 1)
+  * font color, static: #ffffff (White)
+		* font color, hover: #ecc44d (Yellow)
+  * hover-over effects: border-left 4px
+  * menu layout/size: (?)
   
