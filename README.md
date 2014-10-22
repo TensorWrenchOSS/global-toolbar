@@ -1,20 +1,19 @@
 global-toolbar
 =================
-WARNING: Work in Progress!!!!
 
 A common toolbar for use on Webtop, Center and HUD
 
 ##Usage
-This code is intended to be packaged as a library and used verbatim.
+This code is intended to be packaged as a library and used verbatim across Webtop, Center, and HUD.
 
 
 ##Elements in the Common Toolbar
 
-* Menu button: Opens main drop down menu
-* HUD button: Brings up HUD
-* AppsMall button: Brings up AppsMall
-* Webtop button: Brings up Webtop
-* Notifications button: Opens notifications menu
+* HUD button: Opens HUD
+* Center button: Opens Center
+* Webtop button: Opens Webtop
+* Help button: Opens Help Center modal
 * Time
-* Help button: Brings up “Help” window
+* Notifications button: Shows new notifications 
+* Menu button: Opens main drop down menu
   
