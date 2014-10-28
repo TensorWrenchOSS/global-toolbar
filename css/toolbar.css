@@ -46,7 +46,7 @@ body {
 }
 
     .toolbar-item.sml i {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 .toolbar-item.active {
@@ -83,13 +83,18 @@ body {
         .toolbar-item.dropdown ul li {
             margin: 0;
             padding: 0;
-        }
+    }
             
-            .toolbar-item.dropdown ul li:hover a,
-            .toolbar-item.dropdown ul li:hover i {
+            .toolbar-item.dropdown ul li.dropdown-item:hover a {
                 color: #fff;
                 cursor: pointer;
+                border-left: 4px solid #52a3f5;
+                padding-left: 26px;
             }
+            
+                .toolbar-item.dropdown ul li.dropdown-item:hover a i {
+                    color: #fff;
+                }
 
             .toolbar-item.dropdown ul li a {
                 color: #c2c3c7;
@@ -98,18 +103,18 @@ body {
                 display: block;
             }
 
-            .toolbar-item.dropdown ul li i {
-                padding: 7px 15px 0 0;
-                color: #c2c3c7;
-                font-size: 16px;
-                display: block;
-                float: left;
-            }
-
-                .toolbar-item.dropdown ul li i.right {
-                    padding: 0 0 15px 15px;
-                    float: right;
+                .toolbar-item.dropdown ul li i {
+                    padding: 7px 15px 0 0;
+                    color: #c2c3c7;
+                    font-size: 16px;
+                    display: block;
+                    float: left;
                 }
+
+                    .toolbar-item.dropdown ul li i.right {
+                        padding: 0 0 15px 15px;
+                        float: right;
+                    }
 
             .toolbar-item.dropdown ul li.title {
                 color: #52a3f5;
