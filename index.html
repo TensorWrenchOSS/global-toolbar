@@ -5,6 +5,9 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/toolbar.css" />
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
 </head>
 <body>
 
@@ -16,16 +19,18 @@
 	</div>
 	
 	<div class="toolbar-right">
-		<div class="toolbar-item sml dropdown"><i class="icon-bell-filled blue"></i>
-			<ul>
-				<li class="paragraph"><i class="icon-cross right"></i>OZONE Systemwide Update on 1/1/11 at 12:00pm. Server down until 2:00pm <b>12/12/12 00:00</b></li>
-				<li class="paragraph"><i class="icon-cross right"></i>Air Mail Version 1.2.1 released <b>12/12/12 00:00</b></li>
+		<div class="toolbar-item sml dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bell-filled blue"></i></a>
+			<ul class="dropdown-menu">
+				<li class="paragraph"><i class="icon-cross close"></i>OZONE Systemwide Update on 1/1/11 at 12:00pm. Server down until 2:00pm <b>12/12/12 00:00</b></li>
+				<li class="paragraph"><i class="icon-cross close"></i>Air Mail Version 1.2.1 released <b>12/12/12 00:00</b></li>
             </ul>
         </div>
 		<div class="toolbar-item sml"><i class="icon-question"></i></div>
 		<div class="toolbar-item space"></div>
-		<div class="toolbar-item dropdown"><i class="icon-menu"></i>
-			<ul>
+		<div class="toolbar-item dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-menu"></i></a>
+			<ul class="dropdown-menu">
 				<li class="title">Customize</li>
 				<li class="dropdown-item"><a href="#"><i class="icon-ribbon"></i>Apps Library</a></li>
 				<li class="dropdown-item"><a href="#"><i class="icon-wrench"></i>Dashboard Builder</a></li>
