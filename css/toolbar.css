@@ -26,22 +26,36 @@ body {
     padding: 0 10px;
     color: #fff;
     text-decoration: none;
+    transition: color 0.5s ease 0s;
 }
 
-    a.toolbar-item:hover,
-    .toolbar-item i:hover {
+    .toolbar-item:hover,
+    .toolbar-item.sml:hover {
         color: #52a3f5;
         cursor: pointer;
+        height: 37px;
+        border-bottom: 3px solid #8f9194;
     }
+    
+        .toolbar-item.dropdown:hover {
+            border: 0;
+            height: 40px;
+        }
+    
+        .toolbar-item.space:hover {
+            cursor: auto;
+            background: transparent;
+            border: 0;
+            height: 40px;
+        }
 
     .toolbar-item i {
         font-size: 20px;
         position: relative;
     }
+        .toolbar-item i.blue { color: #52a3f5; }
 
-    i.blue { color: #52a3f5; }
-
-.toolbar-item.sml {
+.toolbar-item.sml, .toolbar-item.dropdown.sml .dropdown-toggle {
     color: #c2c3c7;
 }
 
@@ -50,70 +64,100 @@ body {
     }
 
 .toolbar-item.active {
-    height: 36px;
-    border-bottom: 4px solid #52a3f5;
+    height: 37px;
+    border-bottom: 3px solid #52a3f5;
     color: #52a3f5;
 }
 
 .toolbar-item.space {
-    width: 40px;
+    width: 30px;
 }
 
 .toolbar-item.dropdown {
-    padding: 0 15px;
+    position: relative;
+    padding: 0;
 }
 
-    .toolbar-item.dropdown:hover { background: #3E4346; }
-    .toolbar-item.dropdown:hover ul { display: block; }
+    .toolbar-item.dropdown .dropdown-toggle {
+        padding: 0 10px;
+        color: #fff;
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        transition: color 0.5s ease 0s;
+    }
 
-    .toolbar-item.dropdown ul {
-        display: none;
+        .toolbar-item.dropdown .dropdown-toggle:hover {
+            height: 37px;
+            border-bottom: 3px solid #8f9194;
+            color: #52a3f5;
+        }
+
+        .toolbar-item.dropdown .dropdown-toggle:active,
+        .toolbar-item.dropdown.open .dropdown-toggle {
+            outline: 0;
+        }
+
+    .toolbar-item.dropdown.open {
+        *z-index: 1000;
+        background: #3E4346;
+    }
+
+        .toolbar-item.dropdown.open ul.dropdown-menu {
+            display: block;
+        }
+
+    .toolbar-item.dropdown ul.dropdown-menu {
         position: absolute;
         top: 40px;
         right: 0;
-        list-style-type: none;
+        list-style: none;
         background: #3E4346;
-        width: 270px;
         margin: 0;
         padding: 0;
         line-height: 30px;
         color: #c2c3c7;
+        z-index: 1000;
+        float: left;
+        display: none;
+        min-width: 270px;
+        _width: 270px;
+        cursor: auto;
     }
 
         .toolbar-item.dropdown ul li {
             margin: 0;
             padding: 0;
     }
-            
-            .toolbar-item.dropdown ul li.dropdown-item:hover a {
-                color: #fff;
-                cursor: pointer;
-                border-left: 4px solid #52a3f5;
-                padding-left: 26px;
-            }
-            
-                .toolbar-item.dropdown ul li.dropdown-item:hover a i {
-                    color: #fff;
-                }
 
             .toolbar-item.dropdown ul li a {
                 color: #c2c3c7;
                 padding: 0 30px;
                 text-decoration: none;
                 display: block;
+                transition: color 0.1s ease 0s;
+                clear: both;
+                white-space: nowrap;
             }
+            
+                .toolbar-item.dropdown ul li.dropdown-item:hover a {
+                    color: #fff;
+                    cursor: pointer;
+                    border-left: 3px solid #8f9194;
+                    padding-left: 27px;
+                }
 
                 .toolbar-item.dropdown ul li i {
                     padding: 7px 15px 0 0;
-                    color: #c2c3c7;
                     font-size: 16px;
                     display: block;
                     float: left;
                 }
 
-                    .toolbar-item.dropdown ul li i.right {
+                    .toolbar-item.dropdown ul li i.close {
                         padding: 0 0 15px 15px;
                         float: right;
+                        cursor: pointer;
                     }
 
             .toolbar-item.dropdown ul li.title {
@@ -133,6 +177,10 @@ body {
                 padding-bottom: 12px;
                 margin-top: 20px;
             }
+
+                .toolbar-item.dropdown ul li.caboose a:hover {
+                    color: #fff;
+                }
 
             .toolbar-item.dropdown ul li.paragraph {
                 line-height: 1;
