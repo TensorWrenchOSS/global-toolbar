@@ -25,16 +25,21 @@ body {
     float: left;
     padding: 0 10px;
     color: #fff;
+    text-decoration: none;
 }
+
+    a.toolbar-item:hover,
+    .toolbar-item i:hover {
+        color: #52a3f5;
+        cursor: pointer;
+    }
 
     .toolbar-item i {
         font-size: 20px;
+        position: relative;
     }
 
-        .toolbar-item i:hover {
-            color: #52a3f5;
-            cursor: pointer;
-        }
+    i.blue { color: #52a3f5; }
 
 .toolbar-item.sml {
     color: #c2c3c7;
@@ -77,25 +82,38 @@ body {
 
         .toolbar-item.dropdown ul li {
             margin: 0;
-            padding: 0 30px;
+            padding: 0;
         }
+            
+            .toolbar-item.dropdown ul li:hover a,
+            .toolbar-item.dropdown ul li:hover i {
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .toolbar-item.dropdown ul li a {
+                color: #c2c3c7;
+                padding: 0 30px;
+                text-decoration: none;
+                display: block;
+            }
 
             .toolbar-item.dropdown ul li i {
                 padding: 7px 15px 0 0;
+                color: #c2c3c7;
                 font-size: 16px;
                 display: block;
                 float: left;
             }
 
-            .toolbar-item.dropdown ul li.dropdown-item:hover,
-            .toolbar-item.dropdown ul li.caboose:hover {
-                color: #fff;
-                cursor: pointer;
-            }
+                .toolbar-item.dropdown ul li i.right {
+                    padding: 0 0 15px 15px;
+                    float: right;
+                }
 
             .toolbar-item.dropdown ul li.title {
                 color: #52a3f5;
-                padding-top: 20px;
+                padding: 20px 30px 0 30px;
                 font-weight: bold;
             }
 
@@ -106,6 +124,24 @@ body {
 
             .toolbar-item.dropdown ul li.caboose {
                 background: #2D3036;
-                padding: 12px 30px;
+                padding-top: 12px;
+                padding-bottom: 12px;
                 margin-top: 20px;
             }
+
+            .toolbar-item.dropdown ul li.paragraph {
+                line-height: 1;
+                padding: 30px;
+                color: #fff;
+            }
+
+                .toolbar-item.dropdown ul li.paragraph i:hover {
+                    color: #52a3f5;
+                }
+
+                .toolbar-item.dropdown ul li.paragraph b {
+                    color: #c2c3c7;
+                    display: block;
+                    padding-top: 5px;
+                    font-weight: normal;
+                }
