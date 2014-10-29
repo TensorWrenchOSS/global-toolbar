@@ -24,14 +24,14 @@ body {
     height: 34px;
     float: left;
     padding: 3px 10px;
-    color: #fff;
+    color: #c2c3c7;
     text-decoration: none;
     transition: color 0.5s ease 0s;
 }
 
     .toolbar-item:hover,
     .toolbar-item.sml:hover {
-        color: #52a3f5;
+        color: #fff;
         cursor: pointer;
         padding-top: 0;
         border-top: 3px solid #52a3f5;
@@ -52,14 +52,10 @@ body {
         position: relative;
     }
         .toolbar-item i.blue { color: #52a3f5; }
-
-.toolbar-item.sml, .toolbar-item.dropdown.sml .dropdown-toggle {
-    color: #c2c3c7;
+        
+.toolbar-item.sml i {
+    font-size: 14px;
 }
-
-    .toolbar-item.sml i {
-        font-size: 14px;
-    }
 
 .toolbar-item.active {
     padding-top: 0;
@@ -78,7 +74,7 @@ body {
 }
 
     .toolbar-item.dropdown .dropdown-toggle {
-        color: #fff;
+        color: #c2c3c7;
         display: block;
         height: 34px;
         padding: 3px 10px;
@@ -89,7 +85,7 @@ body {
         .toolbar-item.dropdown .dropdown-toggle:hover {
             padding-top: 0;
             border-top: 3px solid #52a3f5;
-            color: #52a3f5;
+            color: #fff;
         }
 
         .toolbar-item.dropdown .dropdown-toggle:active,
