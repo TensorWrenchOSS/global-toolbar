@@ -3,60 +3,113 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/toolbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+
+    <!-- LOCAL TESTING LINKS -->
+    <script type="text/javascript" src="../jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.css" />
+    <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- END OF LOCAL TESTING LINKS -->
+
 </head>
 <body>
 
-<div class="toolbar">
-	<div class="toolbar-left">
-		<a class="toolbar-item active" href="http://ozone-development.github.io/hud-ui/index.html"><i class="icon-home"></i></a>
-		<a class="toolbar-item" href="http://ozone-development.github.io/center-ui/index.html"><i class="icon-shopping"></i></a>
-		<a class="toolbar-item" href="http://ozone-development.github.io/ozp-webtop/#/grid"><i class="icon-layout"></i></a>
-	</div>
-	
-	<div class="toolbar-right">
-		<div class="toolbar-item sml dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bell-filled blue"></i></a>
-			<ul class="dropdown-menu">
-				<li class="paragraph"><i class="icon-cross close"></i>OZONE Systemwide Update on 1/1/11 at 12:00pm. Server down until 2:00pm <b>12/12/12 00:00</b></li>
-				<li class="paragraph"><i class="icon-cross close"></i>Air Mail Version 1.2.1 released <b>12/12/12 00:00</b></li>
-            </ul>
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li><a class="lrg" href="http://ozone-development.github.io/hud-ui"><i class="icon-home"></i></a></li>
+                    <li><a class="lrg" href="http://ozone-development.github.io/center-ui"><i class="icon-shopping"></i></a></li>
+                    <li class="active"><a class="lrg" href="http://ozone-development.github.io/ozp-webtop/#/grid"><i class="icon-layout"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" data-toggle="dropdown"><i class="icon-bell-filled"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/JotSpot32.png" />
+                                    <span>Writing down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/AirMail32.png" />
+                                    <span>Airplanes down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/ChatterBox32.png" />
+                                    <span>Chat down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#modal_help"><i class="icon-question"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="lrg" data-toggle="dropdown"><i class="icon-menu"></i></a>                            
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Personalize</li>
+                            <li><a href="#"><i class="icon-ribbon"></i>Bookmarks</a></li>
+                            <li><a href="#"><i class="icon-head"></i>Profile</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal_settings"><i class="icon-cog"></i>Settings</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Create</li>
+                            <li><a href="#"><i class="icon-wrench"></i>Build a Dashboard</a></li>
+                            <li><a href="#"><i class="icon-square-plus"></i>Submit a Listing</a></li>
+                            <li><a href="#"><i class="icon-cloud"></i>Developer Resources</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Manage</li>
+                            <li><a href="#"><i class="icon-layers"></i>Listing Management</a></li>
+                            <li><a href="#"><i class="icon-shopping-settings"></i>Marketplace Settings</a></li>
+                            <li><a href="#"><i class="icon-bar-graph-2"></i>Metrics</a></li>
+                            <li><a class="caboose" href="#"><i class="icon-arrow-right"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-		<div class="toolbar-item sml"><i class="icon-question"></i></div>
-		<div class="toolbar-item space"></div>
-		<div class="toolbar-item dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-menu"></i></a>
-			<ul class="dropdown-menu">
-				<li class="title">Personalize</li>
-				<li class="dropdown-item"><a href="#"><i class="icon-ribbon"></i>Bookmarks</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-head"></i>Profile</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-cog"></i>Settings</a></li>
-				
-				<li class="space"></li>
-				
-				<li class="title">Create</li>
-				<li class="dropdown-item"><a href="#"><i class="icon-wrench"></i>Build a Dashboard</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-square-plus"></i>Submit a Listing</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-layers"></i>My Listings</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-cloud"></i>Developer Resources</a></li>
-				
-				<li class="space"></li>
-				
-				<li class="title">Manage</li>
-				<li class="dropdown-item"><a href="#"><i class="icon-shopping-settings"></i>Marketplace Settings</a></li>
-				<!--<li class="dropdown-item"><a href="#"><i class="icon-head"></i>Manage Users</a></li>
-				<li class="dropdown-item"><a href="#"><i class="icon-globe"></i>Manage Groups</a></li>-->
-				<li class="dropdown-item"><a href="#"><i class="icon-bar-graph-2"></i>Metrics</a></li>
-				
-				<li class="caboose"><a href="#"><i class="icon-arrow-right"></i>Logout</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+    </nav>
+
+
+
+
+
+
+    <!-- Modals -->
+
+    <div class="modal fade" id="modal_help" tabindex="-1" role="dialog" aria-labelledby="modal_help" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Help Center</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Take the tour</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
