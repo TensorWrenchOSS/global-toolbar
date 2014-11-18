@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+
+    <!-- LOCAL TESTING LINKS -->
+    <script type="text/javascript" src="../jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.css" />
+    <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- END OF LOCAL TESTING LINKS -->
+    
+
+    <!-- WEBTOP CUSTOM CSS -->
+    <style type="text/css">
+        .navbar .navbar-nav > .app > a { 
+            padding: 0 0 2px 0;
+            margin: -2px 5px 0 5px;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; 
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+            .navbar .navbar-nav > .app.active > a,
+            .navbar .navbar-nav > .app > a:hover,
+            .navbar .navbar-nav > .app > a:focus {
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+                filter: alpha(opacity=100);
+                opacity: 1.0;
+            }
+    </style>
+    <!-- END OF WEBTOP CUSTOM CSS -->
+</head>
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li><a class="lrg" href="http://ozone-development.github.io/hud-ui"><i class="icon-home"></i></a></li>
+                    <li><a class="lrg" href="http://ozone-development.github.io/center-ui"><i class="icon-shopping"></i></a></li>
+                    <li class="active"><a class="lrg" href="http://ozone-development.github.io/ozp-webtop/#/grid"><i class="icon-layout"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="icon-bell-filled"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/JotSpot32.png" />
+                                    <span>Writing down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/AirMail32.png" />
+                                    <span>Airplanes down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <button type="button" class="close"><span aria-hidden="true">×</span></button>
+                                    <img class="img-thumbnail pull-left" src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/ChatterBox32.png" />
+                                    <span>Chat down for maintenance</span><br /><i class="small">12/12/12 00:00</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#modal_help"><i class="icon-question"></i></a>
+                    </li>
+                    <li class="navbar-spacer"></li>
+                    <li class="dropdown">
+                        <a href="#" class="lrg" data-toggle="dropdown"><i class="icon-menu"></i></a>                            
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Personalize</li>
+                            <li><a href="#"><i class="icon-ribbon"></i>Bookmarks</a></li>
+                            <li><a href="#"><i class="icon-head"></i>Profile</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal_settings"><i class="icon-cog"></i>Settings</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Create</li>
+                            <li><a href="#"><i class="icon-wrench"></i>Build a Dashboard</a></li>
+                            <li><a href="#"><i class="icon-square-plus"></i>Submit a Listing</a></li>
+                            <li><a href="#"><i class="icon-cloud"></i>Developer Resources</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Manage</li>
+                            <li><a href="#"><i class="icon-layers"></i>Listing Management</a></li>
+                            <li><a href="#"><i class="icon-shopping-settings"></i>Marketplace Settings</a></li>
+                            <li><a href="#"><i class="icon-bar-graph-2"></i>Metrics</a></li>
+                            <li><a class="caboose" href="#"><i class="icon-arrow-right"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+    
+    <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li class="highlight"><a class="lrg" href="#" data-toggle="modal" data-target="#modal_openApps"><i class="icon-plus"></i></a></li>
+                    
+                    <li class="navbar-spacer"></li>
+                    <li class="active"><a href="#"><i class="icon-grid"></i></a></li>
+                    <li><a href="#"><i class="icon-stack"></i></a></li>
+                    <li class="navbar-spacer"></li>
+
+                    <li class="dropdown dropup">
+                        <a href="#" data-toggle="dropdown">Sample Apps <i class="icon-caret-up"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Dashboards</li>
+                            <li>
+                                <a href="#"><i class="icon-stack"></i>Alpha Mission 
+                                    <button type="button" data-toggle="modal" data-target="#modal_deleteDashboard" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <i class="icon-pencil pull-right" data-toggle="modal" data-target="#modal_editDashboard"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-grid"></i>Beta Mission 
+                                    <button type="button" data-toggle="modal" data-target="#modal_deleteDashboard" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <i class="icon-pencil pull-right" data-toggle="modal" data-target="#modal_editDashboard"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-grid"></i>Delta Mission 
+                                    <button type="button" data-toggle="modal" data-target="#modal_deleteDashboard" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <i class="icon-pencil pull-right" data-toggle="modal" data-target="#modal_editDashboard"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-stack"></i>Gamma Mission 
+                                    <button type="button" data-toggle="modal" data-target="#modal_deleteDashboard" class="close pull-right"><span aria-hidden="true">×</span></button>
+                                    <i class="icon-pencil pull-right" data-toggle="modal" data-target="#modal_editDashboard"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="caboose" href="#" data-toggle="modal" data-target="#modal_createDashboard">
+                                    <i class="icon-plus"></i>Create a new dashboard
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-spacer"></li>
+                    
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/JotSpot32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/AirMail32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/HatchLatch32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/Clipboard32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/ChatterBox32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/PlotPossum32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/JotSpot32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/AirMail32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/HatchLatch32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/Clipboard32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/ChatterBox32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/PlotPossum32.png" /></a></li>
+                    <li class="app"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/JotSpot32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/AirMail32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/HatchLatch32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/Clipboard32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/ChatterBox32.png" /></a></li>
+                    <li class="app active"><a href="#"><img src="https://raw.githubusercontent.com/ozone-development/center-ui/master/app/images/sample-listings/PlotPossum32.png" /></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><i class="icon-fast-forward"></i></a></li>
+                    <li><a href="#"><i class="icon-maximize"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modals -->
+
+    <div class="modal fade" id="modal_help" tabindex="-1" role="dialog" aria-labelledby="modal_help" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Help Center</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Take the tour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_openApps" tabindex="-1" role="dialog" aria-labelledby="modal_open" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Open bookmarked apps</h3>
+                    <button type="button" class="btn btn-default pull-right">Find more apps</button>
+                    <p>These are apps you have already bookmarked from the Center. To edit your bookmarks, visit the HUD.</p>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#modal_createDashboard">Open in a new dashboard</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Open</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_deleteDashboard" tabindex="-1" role="dialog" aria-labelledby="modal_deleteDashboard" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Are you sure you want to delete the dashboard <b>Alpha Mission</b>?</h3>
+                </div>
+                <div class="modal-body">
+                    <p>All apps from this dashboard will remain bookmarked and can be added onto another dashboard.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Delete dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_editDashboard" tabindex="-1" role="dialog" aria-labelledby="modal_editDashboard" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Rename the dashboard <b>Alpha Mission</b></h3>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="name">New name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter dashboard name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Rename dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_createDashboard" tabindex="-1" role="dialog" aria-labelledby="modal_createDashboard" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title">Create a new dashboard</h3>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name2" placeholder="Enter dashboard name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#modal_openApps">Add apps to this dashboard</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Create dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
