@@ -116,10 +116,6 @@
                     <li class="highlight"><a class="lrg" href="#" data-toggle="modal" data-target="#modal_openApps"><i class="icon-plus"></i></a></li>
                     
                     <li class="navbar-spacer"></li>
-                    <li class="active"><a href="#"><i class="icon-grid"></i></a></li>
-                    <li><a href="#"><i class="icon-stack"></i></a></li>
-                    <li class="navbar-spacer"></li>
-
                     <li class="dropdown dropup">
                         <a href="#" data-toggle="dropdown">Sample Apps <i class="icon-caret-up"></i></a>
                         <ul class="dropdown-menu">
@@ -245,7 +241,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Delete dashboard</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Delete dashboard</button>
                 </div>
             </div>
         </div>
@@ -256,19 +252,28 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h3 class="modal-title">Rename the dashboard <b>Alpha Mission</b></h3>
+                    <h3 class="modal-title">Edit the dashboard <b>Alpha Mission</b></h3>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="name">New name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter dashboard name">
+                    <form role="form" class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Current dashboard name">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>View</label><br />
+                            <button type="button" class="btn btn-default">
+                                <i class="icon-grid"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                <i class="icon-stack"></i>
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Rename dashboard</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Save dashboard</button>
                 </div>
             </div>
         </div>
@@ -282,17 +287,25 @@
                     <h3 class="modal-title">Create a new dashboard</h3>
                 </div>
                 <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
+                    <form role="form" class="row">
+                        <div class="form-group col-lg-6">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" id="name2" placeholder="Enter dashboard name">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>View</label><br />
+                            <button type="button" class="btn btn-default">
+                                <i class="icon-grid"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                <i class="icon-stack"></i>
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#modal_openApps">Add apps to this dashboard</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Create dashboard</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#modal_openApps">Create dashboard</button>
                 </div>
             </div>
         </div>
