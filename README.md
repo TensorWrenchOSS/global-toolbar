@@ -15,7 +15,6 @@ This HTML code is to be used verbatim across Webtop, Center, and HUD in conjunct
 * Center button: Opens Center
 * Webtop button: Opens Webtop
 * Help button: Opens Help Center modal
-* Time
-* Notifications button: Shows new notifications 
+* Notifications button: Shows new notifications
 * Menu button: Opens main drop down menu
   
