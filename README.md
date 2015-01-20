@@ -18,3 +18,44 @@ This HTML code is to be used verbatim across Webtop, Center, and HUD in conjunct
 * Notifications button: Shows new notifications
 * Menu button: Opens main drop down menu
   
+  
+##Elements in Menus by Role (IOB)
+
+###User
+
+####Personalize
+* Bookmarks
+* Profile
+* Settings
+####Create
+* Submit a Listing
+* Developer Resources
+####Manage
+* Listing Management
+
+###Org Steward
+
+####Personalize
+* Bookmarks
+* Profile
+* Settings
+####Create
+* Submit a Listing
+* Developer Resources
+####Manage
+* Listing Management
+* Metrics
+
+###Marketplace Steward
+
+####Personalize
+* Bookmarks
+* Profile
+* Settings
+####Create
+* Submit a Listing
+* Developer Resources
+####Manage
+* Listing Management
+* Marketplace Management
+* Metrics
